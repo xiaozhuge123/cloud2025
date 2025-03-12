@@ -9,6 +9,8 @@ import jakarta.annotation.Resource;
 import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * @auther zzyy
  * @create 2023-11-03 18:55
@@ -37,5 +39,10 @@ public class PayController{
     @GetMapping(value = "/pay/get/{id}")
     public Pay getById(@PathVariable("id") Integer id){
         return payService.getById(id);
-    }//全部查询getall作为家庭作业
+    }
+    //全部查询getall作为家庭作业
+    @GetMapping(value = "/pay/getAll")
+    public List<Pay> getAll(){
+        return payService.getAll();
+    }
 }
