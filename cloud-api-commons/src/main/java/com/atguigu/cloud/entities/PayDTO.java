@@ -1,6 +1,5 @@
 package com.atguigu.cloud.entities;
 
-import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,7 +9,11 @@ import java.math.BigDecimal;
 
 /**
  * @auther zzyy
- * @create 2023-11-03 18:58
+ * @create 2023-11-04 15:28
+ *
+ * 一般而言，调用者不应该获悉服务提供者的entity资源并知道表结构关系，所以服务提供方给出的
+
+接口文档都都应成为DTO
  */
 @Data
 @AllArgsConstructor
