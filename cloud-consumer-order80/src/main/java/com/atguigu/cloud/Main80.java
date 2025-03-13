@@ -2,12 +2,14 @@ package com.atguigu.cloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @auther zzyy
  * @create 2023-11-04 15:19
  */
 @SpringBootApplication
+@EnableDiscoveryClient
 public class Main80
 {
     public static void main(String[] args)
