@@ -69,10 +69,12 @@ public class PayController
 
     @Value("${server.port}")
     private String port;
+    @Value("${atguigu.info}")
+    private String info;
 
-    @GetMapping(value = "/pay/getInfo")
-    public ResultData<String> getInfo(@Value("${atguigu.info}") String info)
+    @GetMapping(value = "/pay/get/info")
+    private String getInfoByConsul(@Value("${atguigu.info}") String atguiguInfo)
     {
-        return ResultData.success(info+"--"+port);
+        return "atguiguInfo: "+atguiguInfo+"\t"+"port: "+port;
     }
 }
