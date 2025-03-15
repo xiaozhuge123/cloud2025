@@ -36,5 +36,4 @@ public class ResultData<T> {
 
         return resultData;
     }
-
 }
